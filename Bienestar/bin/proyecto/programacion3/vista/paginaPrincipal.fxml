@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="462.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto.programacion3.controlador.BienestarController">
+   <children>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="687.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab fx:id="pestanaEstudiantes" text="Estudiantes">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="textDocumentoEstudinate" layoutX="28.0" layoutY="87.0" prefHeight="25.0" prefWidth="188.0" />
+                        <TextField fx:id="textNombreEstudiante" layoutX="28.0" layoutY="139.0" prefHeight="25.0" prefWidth="188.0" />
+                        <TextField fx:id="textUsuarioEstudiante" layoutX="28.0" layoutY="192.0" prefHeight="25.0" prefWidth="188.0" />
+                        <TextField fx:id="textClaveEstudiante" layoutX="28.0" layoutY="243.0" prefHeight="25.0" prefWidth="188.0" />
+                        <Text layoutX="28.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nro. Documento:" />
+                        <Text layoutX="28.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Completo:" />
+                        <Text layoutX="28.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario:" />
+                        <Text layoutX="28.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clave:" />
+                        <TableView fx:id="tablaEstudiantes" layoutX="266.0" layoutY="77.0" prefHeight="237.0" prefWidth="319.0">
+                           <columns>
+                              <TableColumn fx:id="columnaDocumetoEstudiante" prefWidth="74.0" text="Documento" />
+                              <TableColumn fx:id="columnaNombreEstudiante" prefWidth="96.0" text="Nombre" />
+                              <TableColumn fx:id="columnaSemestreEstudiante" prefWidth="62.0" text="Semestre" />
+                              <TableColumn fx:id="columnaCreditosRegistradosEstudiante" prefWidth="104.0" text="Creditos Registrados" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="botonGuardarEstudiante" layoutX="131.0" layoutY="288.0" mnemonicParsing="false" onAction="#GuardarEstudiante" prefHeight="25.0" prefWidth="87.0" text="Guardar" />
+                        <Button fx:id="botonBuscarEstudiante" layoutX="498.0" layoutY="39.0" mnemonicParsing="false" onAction="#buscarEstudiante" prefHeight="25.0" prefWidth="87.0" text="Buscar" />
+                        <Button fx:id="botonActualizarEstudiante" layoutX="28.0" layoutY="288.0" mnemonicParsing="false" onAction="#actualizarEstudiante" prefHeight="25.0" prefWidth="87.0" text="Actualizar" />
+                        <Button fx:id="botonEliminarEstudiante" layoutX="390.0" layoutY="334.0" mnemonicParsing="false" onAction="#eliminarEstudiante" prefHeight="25.0" prefWidth="87.0" text="Eliminar" />
+                        <Text layoutX="268.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nro. Documento:" />
+                        <TextField fx:id="textBuscarDocumentoEstudinate1" layoutX="268.0" layoutY="40.0" prefHeight="25.0" prefWidth="216.0" />
+                        <Separator layoutX="236.0" layoutY="1.0" orientation="VERTICAL" prefHeight="385.0" prefWidth="13.0" />
+                        <Text layoutX="47.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Información del Estudiante:">
+                           <font>
+                              <Font name="System Italic" size="13.0" />
+                           </font>
+                        </Text>
+                        <Separator layoutX="29.0" layoutY="51.0" prefWidth="200.0" />
+                        <Button fx:id="botonLimpiarEstudiante" layoutX="30.0" layoutY="328.0" mnemonicParsing="false" onAction="#LimpiarEstudiante" prefHeight="25.0" prefWidth="186.0" text="Limpiar" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="pestanaEstudiantes1" text="Instructores">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="textDocumentoInstructor" layoutX="28.0" layoutY="87.0" prefHeight="25.0" prefWidth="188.0" />
+                        <TextField fx:id="textNombreInstructor" layoutX="28.0" layoutY="139.0" prefHeight="25.0" prefWidth="188.0" />
+                        <TextField fx:id="textUsuarioInstructor" layoutX="28.0" layoutY="192.0" prefHeight="25.0" prefWidth="188.0" />
+                        <TextField fx:id="textClaveInstructor" layoutX="28.0" layoutY="243.0" prefHeight="25.0" prefWidth="188.0" />
+                        <Text layoutX="28.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nro. Documento:" />
+                        <Text layoutX="28.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Completo:" />
+                        <Text layoutX="28.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario:" />
+                        <Text layoutX="28.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clave:" />
+                        <TableView fx:id="tablaInstructores" layoutX="266.0" layoutY="77.0" prefHeight="237.0" prefWidth="319.0">
+                           <columns>
+                              <TableColumn fx:id="columnaDocumetoInstructor" prefWidth="74.0" text="Documento" />
+                              <TableColumn fx:id="columnaNombreInstructor" prefWidth="96.0" text="Nombre" />
+                              <TableColumn fx:id="columnaUsuarioInstructor" text="Usuario" />
+                              <TableColumn fx:id="columnaClaveInstructor" prefWidth="86.0" text="Clave" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="botonGuardarInstructor" layoutX="131.0" layoutY="288.0" mnemonicParsing="false" onAction="#GuardarInstructor" prefHeight="25.0" prefWidth="87.0" text="Guardar" />
+                        <Button fx:id="botonBuscarInstructor" layoutX="498.0" layoutY="39.0" mnemonicParsing="false" onAction="#buscarIndtructor" prefHeight="25.0" prefWidth="87.0" text="Buscar" />
+                        <Button fx:id="botonActualizarInstructor" layoutX="28.0" layoutY="288.0" mnemonicParsing="false" onAction="#actualizarInstructor" prefHeight="25.0" prefWidth="87.0" text="Actualizar" />
+                        <Button fx:id="botonEliminarInstructor" layoutX="390.0" layoutY="334.0" mnemonicParsing="false" onAction="#eliminarInstructor" prefHeight="25.0" prefWidth="87.0" text="Eliminar" />
+                        <Text layoutX="268.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nro. Documento:" />
+                        <TextField fx:id="textBuscarDocumentoInstructor" layoutX="268.0" layoutY="40.0" prefHeight="25.0" prefWidth="216.0" />
+                        <Separator layoutX="236.0" layoutY="1.0" orientation="VERTICAL" prefHeight="385.0" prefWidth="13.0" />
+                        <Text layoutX="47.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Información del Instructor:">
+                           <font>
+                              <Font name="System Italic" size="13.0" />
+                           </font>
+                        </Text>
+                        <Separator layoutX="29.0" layoutY="51.0" prefWidth="200.0" />
+                        <Button fx:id="botonLimpiarInstructor" layoutX="30.0" layoutY="328.0" mnemonicParsing="false" onAction="#LimpiarInstructor" prefHeight="25.0" prefWidth="186.0" text="Limpiar" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="pestanaLugares" text="Lugares">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="textNombreLugares" layoutX="29.0" layoutY="130.0" prefHeight="25.0" prefWidth="188.0" />
+                        <TextField fx:id="textDireccionLugares" layoutX="29.0" layoutY="182.0" prefHeight="25.0" prefWidth="188.0" />
+                        <Text layoutX="29.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" />
+                        <Text layoutX="29.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección:" />
+                        <TableView fx:id="tablaLugares" layoutX="248.0" layoutY="72.0" prefHeight="238.0" prefWidth="337.0">
+                           <columns>
+                              <TableColumn fx:id="columnaCodigoLugar" prefWidth="74.0" text="Cod" />
+                              <TableColumn fx:id="columnaNombreLugar" prefWidth="127.0" text="Nombre" />
+                              <TableColumn fx:id="columnaDireccionLugar" prefWidth="135.0" text="Dirección" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="botonGuardarLugar" layoutX="30.0" layoutY="251.0" mnemonicParsing="false" onAction="#GuardarLugar" prefHeight="25.0" prefWidth="186.0" text="Guardar" />
+                        <Button fx:id="botonBuscarLugar" layoutX="498.0" layoutY="33.0" mnemonicParsing="false" onAction="#buscarLugar" prefHeight="25.0" prefWidth="87.0" text="Buscar" />
+                        <Button fx:id="botonActualizarLugar" layoutX="30.0" layoutY="288.0" mnemonicParsing="false" onAction="#actualizarLugar" prefHeight="25.0" prefWidth="186.0" text="Actualizar" />
+                        <Button fx:id="botonEliminarLugar" layoutX="373.0" layoutY="330.0" mnemonicParsing="false" onAction="#eliminarLugar" prefHeight="25.0" prefWidth="87.0" text="Eliminar" />
+                        <Text layoutX="248.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" />
+                        <TextField fx:id="textBuscarLugar" layoutX="248.0" layoutY="33.0" prefHeight="25.0" prefWidth="234.0" />
+                        <Separator layoutX="228.0" layoutY="3.0" orientation="VERTICAL" prefHeight="390.0" prefWidth="0.0" />
+                        <Button fx:id="botonLimpiarLugar" layoutX="28.0" layoutY="330.0" mnemonicParsing="false" onAction="#limpiarLugar" prefHeight="25.0" prefWidth="186.0" text="Limpiar" />
+                        <Text layoutX="55.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Información de Lugar:">
+                           <font>
+                              <Font name="System Italic" size="13.0" />
+                           </font>
+                        </Text>
+                        <Separator layoutX="16.0" layoutY="71.0" prefWidth="200.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="pestanaCreditos" text="Creditos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ChoiceBox fx:id="choiceBoxTipoCredito" layoutX="162.0" layoutY="272.0" prefHeight="25.0" prefWidth="132.0" />
+                        <TextField fx:id="textNmbreCredito" layoutX="24.0" layoutY="70.0" prefHeight="25.0" prefWidth="266.0" />
+                        <TextField fx:id="textDracionHorasCredito" layoutX="24.0" layoutY="125.0" prefHeight="25.0" prefWidth="130.0" />
+                        <TextField fx:id="textCupoMaximoCredito" layoutX="163.0" layoutY="124.0" prefHeight="25.0" prefWidth="130.0" />
+                        <Text layoutX="24.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" />
+                        <Text layoutX="24.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duración horas:" />
+                        <Text layoutX="163.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cupo Maximo:" />
+                        <ChoiceBox fx:id="choiceBoxHorarioCredito" layoutX="162.0" layoutY="174.0" prefHeight="25.0" prefWidth="132.0" />
+                        <Text layoutX="162.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horario" />
+                        <Text layoutX="23.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instructor:" />
+                        <ChoiceBox fx:id="choiceBoxInstructorCredito" layoutX="23.0" layoutY="174.0" prefHeight="25.0" prefWidth="132.0" />
+                        <Text layoutX="23.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lugar:" />
+                        <ChoiceBox fx:id="choiceBoxLugarCredito" layoutX="23.0" layoutY="224.0" prefHeight="25.0" prefWidth="132.0" />
+                        <Text layoutX="163.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Costo:" />
+                        <TextField fx:id="textCostoCredito" layoutX="163.0" layoutY="225.0" prefHeight="25.0" prefWidth="130.0" />
+                        <ChoiceBox fx:id="choiceBoxHomologableCredito" layoutX="24.0" layoutY="272.0" prefHeight="25.0" prefWidth="132.0" />
+                        <Text layoutX="24.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homologable:" />
+                        <Button fx:id="botonGuardarCredito" layoutX="22.0" layoutY="364.0" mnemonicParsing="false" onAction="#guardarCredito" prefHeight="25.0" prefWidth="87.0" text="Guardar" />
+                        <Button fx:id="botonBuscarCredito" layoutX="509.0" layoutY="51.0" mnemonicParsing="false" onAction="#buscarCredito" prefHeight="25.0" prefWidth="87.0" text="Buscar" />
+                        <Button fx:id="botonActuializarCredito" layoutX="118.0" layoutY="364.0" mnemonicParsing="false" onAction="#actuializarCredito" prefHeight="25.0" prefWidth="87.0" text="Actualizar" />
+                        <Button fx:id="botonEliminarCredito" layoutX="468.0" layoutY="364.0" mnemonicParsing="false" onAction="#eliminarCredito" prefHeight="25.0" prefWidth="87.0" text="Eliminar" />
+                        <TableView fx:id="tablaCreditos" layoutX="322.0" layoutY="90.0" prefHeight="234.0" prefWidth="351.0">
+                          <columns>
+                            <TableColumn fx:id="columnaNombreCredito" prefWidth="90.0" text="Nombre" />
+                            <TableColumn fx:id="columnaDuracionCredito" prefWidth="84.0" text="Duración" />
+                              <TableColumn fx:id="columnaInstructorCredito" prefWidth="92.0" text="Instructor" />
+                              <TableColumn fx:id="columnaHorarioCredito" prefWidth="84.0" text="Horario" />
+                          </columns>
+                        </TableView>
+                        <Text layoutX="322.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Credito:" />
+                        <TextField fx:id="textBuscarCredito" layoutX="322.0" layoutY="51.0" prefHeight="25.0" prefWidth="174.0" />
+                        <Text layoutX="79.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Información del Credito:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Text>
+                        <Separator layoutX="307.0" orientation="VERTICAL" prefHeight="395.0" prefWidth="0.0" />
+                        <Separator layoutX="52.0" layoutY="42.0" prefWidth="200.0" />
+                        <Button fx:id="botonLimpiarCredito" layoutX="215.0" layoutY="364.0" mnemonicParsing="false" onAction="#limpiarCredito" prefHeight="25.0" prefWidth="87.0" text="Limpiar" />
+                        <Label layoutX="162.0" layoutY="257.0" text="Tipo de credito:" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

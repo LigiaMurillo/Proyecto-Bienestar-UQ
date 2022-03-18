@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="462.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto.programacion3.controlador.InstructorViewController">
+   <children>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="687.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab fx:id="pestanaCreditos" text="Registros">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="24.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credito:" />
+                        <ChoiceBox fx:id="choiceBoxInstructorCredito" layoutX="23.0" layoutY="71.0" prefHeight="25.0" prefWidth="269.0" />
+                        <Button fx:id="botonGuardarCredito" layoutX="22.0" layoutY="384.0" mnemonicParsing="false" onAction="#guardarCredito" prefHeight="25.0" prefWidth="87.0" text="Guardar" />
+                        <Button fx:id="botonBuscarCredito" layoutX="509.0" layoutY="51.0" mnemonicParsing="false" onAction="#buscarCredito" prefHeight="25.0" prefWidth="87.0" text="Buscar" />
+                        <Button fx:id="botonActuializarCredito" layoutX="118.0" layoutY="384.0" mnemonicParsing="false" onAction="#actuializarCredito" prefHeight="25.0" prefWidth="87.0" text="Actualizar" />
+                        <Button fx:id="botonEliminarCredito" layoutX="468.0" layoutY="364.0" mnemonicParsing="false" onAction="#eliminarCredito" prefHeight="25.0" prefWidth="87.0" text="Eliminar" />
+                        <TableView fx:id="tablaCreditos" layoutX="322.0" layoutY="90.0" prefHeight="234.0" prefWidth="351.0">
+                          <columns>
+                            <TableColumn fx:id="columnaNombreCredito" prefWidth="90.0" text="Nombre" />
+                            <TableColumn fx:id="columnaDuracionCredito" prefWidth="63.0" text="Credito" />
+                              <TableColumn fx:id="columnaInstructorCredito" prefWidth="61.0" text="Promedio" />
+                              <TableColumn fx:id="columnaHorarioCredito" prefWidth="69.0" text="Asistencia" />
+                              <TableColumn fx:id="columnaInstructorCredito1" maxWidth="500.0" prefWidth="67.0" text="Aprobado?" />
+                          </columns>
+                        </TableView>
+                        <Text layoutX="322.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Estudiante:" />
+                        <TextField fx:id="textBuscarCredito" layoutX="322.0" layoutY="51.0" prefHeight="25.0" prefWidth="174.0" />
+                        <Text layoutX="79.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Información del Registro:">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Text>
+                        <Separator layoutX="307.0" orientation="VERTICAL" prefHeight="395.0" prefWidth="0.0" />
+                        <Separator layoutX="52.0" layoutY="42.0" prefWidth="200.0" />
+                        <Button fx:id="botonLimpiarCredito" layoutX="215.0" layoutY="384.0" mnemonicParsing="false" onAction="#limpiarCredito" prefHeight="25.0" prefWidth="87.0" text="Limpiar" />
+                        <ChoiceBox fx:id="choiceBoxInstructorCredito1" layoutX="23.0" layoutY="136.0" prefHeight="25.0" prefWidth="269.0" />
+                        <Text layoutX="24.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudiante" />
+                        <TextField fx:id="textBuscarCredito1" layoutX="24.0" layoutY="207.0" prefHeight="25.0" prefWidth="126.0" />
+                        <TextField fx:id="textBuscarCredito11" layoutX="164.0" layoutY="207.0" prefHeight="25.0" prefWidth="128.0" />
+                        <Text layoutX="24.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nota 1:" />
+                        <Text layoutX="164.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nota 2:" />
+                        <Text layoutX="164.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nota 4:" />
+                        <Text layoutX="24.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nota 3:" />
+                        <TextField fx:id="textBuscarCredito111" layoutX="164.0" layoutY="271.0" prefHeight="25.0" prefWidth="128.0" />
+                        <TextField fx:id="textBuscarCredito12" layoutX="24.0" layoutY="271.0" prefHeight="25.0" prefWidth="126.0" />
+                        <Text layoutX="164.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aprobado:" />
+                        <Text layoutX="24.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horas Asistidas:" />
+                        <TextField fx:id="textBuscarCredito112" layoutX="164.0" layoutY="332.0" prefHeight="25.0" prefWidth="128.0" />
+                        <TextField fx:id="textBuscarCredito13" layoutX="24.0" layoutY="332.0" prefHeight="25.0" prefWidth="126.0" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_291" class="java.beans.XMLDecoder">
+ <object class="proyecto.programacion3.modelo.Bienestar">
+  <void property="listaAdministradores">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="proyecto.programacion3.modelo.Administrador">
+      <void property="cedula">
+       <string>12490125</string>
+      </void>
+      <void property="clave">
+       <string>0000</string>
+      </void>
+      <void property="nick">
+       <string>ligia</string>
+      </void>
+      <void property="nombre">
+       <string>Ligia</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="listaCreditos">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="proyecto.programacion3.modelo.CreditoDeportivo" id="CreditoDeportivo0">
+      <void property="asistenciaminima">
+       <double>24.0</double>
+      </void>
+      <void property="codigo">
+       <string>U87C92</string>
+      </void>
+      <void property="contadorEstudiantes">
+       <int>4</int>
+      </void>
+      <void property="cupoMaximo">
+       <int>30</int>
+      </void>
+      <void property="duracionHoras">
+       <int>60</int>
+      </void>
+      <void property="horario">
+       <string>16:00</string>
+      </void>
+      <void property="instructor">
+       <object class="proyecto.programacion3.modelo.Instructor" id="Instructor0">
+        <void property="cedula">
+         <string>109494</string>
+        </void>
+        <void property="clave">
+         <string>0000</string>
+        </void>
+        <void property="nick">
+         <string>alex</string>
+        </void>
+        <void property="nombre">
+         <string>Alex</string>
+        </void>
+       </object>
+      </void>
+      <void property="listaEstudiantes">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <object class="proyecto.programacion3.modelo.Estudiante" id="Estudiante0">
+          <void property="cedula">
+           <string>1094944786</string>
+          </void>
+          <void property="clave">
+           <string>0000</string>
+          </void>
+          <void property="listaCreditosInscritos">
+           <object class="java.util.ArrayList">
+            <void method="add">
+             <object idref="CreditoDeportivo0"/>
+            </void>
+            <void method="add">
+             <object class="proyecto.programacion3.modelo.CreditoCultural" id="CreditoCultural0">
+              <void property="codigo">
+               <string>1NRUJW</string>
+              </void>
+              <void property="contadorEstudiantes">
+               <int>1</int>
+              </void>
+              <void property="costo">
+               <double>90000.0</double>
+              </void>
+              <void property="cupoMaximo">
+               <int>30</int>
+              </void>
+              <void property="duracionHoras">
+               <int>50</int>
+              </void>
+              <void property="horario">
+               <string>18:00</string>
+              </void>
+              <void property="instructor">
+               <object idref="Instructor0"/>
+              </void>
+              <void property="listaEstudiantes">
+               <object class="java.util.ArrayList">
+                <void method="add">
+                 <object idref="Estudiante0"/>
+                </void>
+               </object>
+              </void>
+              <void property="lugar">
+               <object class="proyecto.programacion3.modelo.Lugar" id="Lugar0">
+                <void property="direccion">
+                 <string>Bienestar UQ</string>
+                </void>
+                <void property="nombre">
+                 <string>Salon de teatro</string>
+                </void>
+               </object>
+              </void>
+              <void property="nombre">
+               <string>Pintura</string>
+              </void>
+              <void property="tipoCredito">
+               <object class="java.lang.Enum" method="valueOf">
+                <class>proyecto.programacion3.utilidades.TipoCredito</class>
+                <string>CULTURAL</string>
+               </object>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+          <void property="nick">
+           <string>maik</string>
+          </void>
+          <void property="nombre">
+           <string>Michael</string>
+          </void>
+          <void property="semestre">
+           <int>1</int>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+      <void property="lugar">
+       <object class="proyecto.programacion3.modelo.Lugar" id="Lugar1">
+        <void property="direccion">
+         <string>cra 2</string>
+        </void>
+        <void property="nombre">
+         <string>Coliseo</string>
+        </void>
+       </object>
+      </void>
+      <void property="nombre">
+       <string>Futbol</string>
+      </void>
+      <void property="tipoCredito">
+       <object class="java.lang.Enum" id="TipoCredito0" method="valueOf">
+        <class>proyecto.programacion3.utilidades.TipoCredito</class>
+        <string>DEPORTIVO</string>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="proyecto.programacion3.modelo.CreditoAcademico">
+      <void property="codigo">
+       <string>ZS92NI</string>
+      </void>
+      <void property="contadorEstudiantes">
+       <int>2</int>
+      </void>
+      <void property="cupoMaximo">
+       <int>40</int>
+      </void>
+      <void property="duracionHoras">
+       <int>90</int>
+      </void>
+      <void property="homologable">
+       <boolean>true</boolean>
+      </void>
+      <void property="horario">
+       <string>16:00</string>
+      </void>
+      <void property="instructor">
+       <object idref="Instructor0"/>
+      </void>
+      <void property="listaEstudiantes">
+       <object class="java.util.ArrayList"/>
+      </void>
+      <void property="lugar">
+       <object class="proyecto.programacion3.modelo.Lugar" id="Lugar2">
+        <void property="direccion">
+         <string>Bloque ingenieria</string>
+        </void>
+        <void property="nombre">
+         <string>Salon 404</string>
+        </void>
+       </object>
+      </void>
+      <void property="nombre">
+       <string>Programacion</string>
+      </void>
+      <void property="tipoCredito">
+       <object class="java.lang.Enum" id="TipoCredito1" method="valueOf">
+        <class>proyecto.programacion3.utilidades.TipoCredito</class>
+        <string>ACADEMICO</string>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="proyecto.programacion3.modelo.CreditoAcademico">
+      <void property="codigo">
+       <string>7TG2AT</string>
+      </void>
+      <void property="cupoMaximo">
+       <int>40</int>
+      </void>
+      <void property="duracionHoras">
+       <int>90</int>
+      </void>
+      <void property="horario">
+       <string>20:00</string>
+      </void>
+      <void property="instructor">
+       <object idref="Instructor0"/>
+      </void>
+      <void property="listaEstudiantes">
+       <object class="java.util.ArrayList"/>
+      </void>
+      <void property="lugar">
+       <object idref="Lugar2"/>
+      </void>
+      <void property="nombre">
+       <string>Matematicas</string>
+      </void>
+      <void property="tipoCredito">
+       <object idref="TipoCredito1"/>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object idref="CreditoCultural0"/>
+    </void>
+    <void method="add">
+     <object class="proyecto.programacion3.modelo.CreditoDeportivo">
+      <void property="asistenciaminima">
+       <double>24.0</double>
+      </void>
+      <void property="codigo">
+       <string>LHVYTU</string>
+      </void>
+      <void property="contadorEstudiantes">
+       <int>1</int>
+      </void>
+      <void property="cupoMaximo">
+       <int>30</int>
+      </void>
+      <void property="duracionHoras">
+       <int>60</int>
+      </void>
+      <void property="horario">
+       <string>20:00</string>
+      </void>
+      <void property="instructor">
+       <object class="proyecto.programacion3.modelo.Instructor" id="Instructor1">
+        <void property="cedula">
+         <string>1094902513</string>
+        </void>
+        <void property="clave">
+         <string>0000</string>
+        </void>
+        <void property="nick">
+         <string>bryan</string>
+        </void>
+        <void property="nombre">
+         <string>Bryan</string>
+        </void>
+       </object>
+      </void>
+      <void property="listaEstudiantes">
+       <object class="java.util.ArrayList"/>
+      </void>
+      <void property="lugar">
+       <object idref="Lugar1"/>
+      </void>
+      <void property="nombre">
+       <string>Tennis</string>
+      </void>
+      <void property="tipoCredito">
+       <object idref="TipoCredito0"/>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="listaEstudiantes">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object idref="Estudiante0"/>
+    </void>
+    <void method="add">
+     <object class="proyecto.programacion3.modelo.Estudiante">
+      <void property="cedula">
+       <string>1094944785</string>
+      </void>
+      <void property="clave">
+       <string>0000</string>
+      </void>
+      <void property="listaCreditosInscritos">
+       <object class="java.util.ArrayList"/>
+      </void>
+      <void property="nick">
+       <string>ana</string>
+      </void>
+      <void property="nombre">
+       <string>Ana Maria</string>
+      </void>
+      <void property="semestre">
+       <int>1</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="proyecto.programacion3.modelo.Estudiante">
+      <void property="cedula">
+       <string>1094978596</string>
+      </void>
+      <void property="clave">
+       <string>0000</string>
+      </void>
+      <void property="listaCreditosInscritos">
+       <object class="java.util.ArrayList"/>
+      </void>
+      <void property="nick">
+       <string>lina</string>
+      </void>
+      <void property="nombre">
+       <string>Lina</string>
+      </void>
+      <void property="semestre">
+       <int>1</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="proyecto.programacion3.modelo.Estudiante">
+      <void property="cedula">
+       <string>1094978591</string>
+      </void>
+      <void property="clave">
+       <string>0000</string>
+      </void>
+      <void property="listaCreditosInscritos">
+       <object class="java.util.ArrayList"/>
+      </void>
+      <void property="nick">
+       <string>lisa</string>
+      </void>
+      <void property="nombre">
+       <string>Lisa</string>
+      </void>
+      <void property="semestre">
+       <int>1</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="proyecto.programacion3.modelo.Estudiante">
+      <void property="cedula">
+       <string>1094921532</string>
+      </void>
+      <void property="clave">
+       <string>0000</string>
+      </void>
+      <void property="listaCreditosInscritos">
+       <object class="java.util.ArrayList"/>
+      </void>
+      <void property="nick">
+       <string>manu</string>
+      </void>
+      <void property="nombre">
+       <string>Manuel</string>
+      </void>
+      <void property="semestre">
+       <int>1</int>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="proyecto.programacion3.modelo.Estudiante">
+      <void property="cedula">
+       <string>1094944783</string>
+      </void>
+      <void property="clave">
+       <string>0000</string>
+      </void>
+      <void property="listaCreditosInscritos">
+       <object class="java.util.ArrayList"/>
+      </void>
+      <void property="nick">
+       <string>maria</string>
+      </void>
+      <void property="nombre">
+       <string>Maria</string>
+      </void>
+      <void property="semestre">
+       <int>1</int>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="listaInstructores">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object idref="Instructor0"/>
+    </void>
+    <void method="add">
+     <object idref="Instructor1"/>
+    </void>
+   </object>
+  </void>
+  <void property="listaLugares">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object idref="Lugar1"/>
+    </void>
+    <void method="add">
+     <object idref="Lugar2"/>
+    </void>
+    <void method="add">
+     <object class="proyecto.programacion3.modelo.Lugar">
+      <void property="direccion">
+       <string>Bloque ingenieria</string>
+      </void>
+      <void property="nombre">
+       <string>Salon 415</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object idref="Lugar0"/>
+    </void>
+   </object>
+  </void>
+  <void property="listaRegistros">
+   <object class="java.util.ArrayList"/>
+  </void>
+ </object>
+</java>

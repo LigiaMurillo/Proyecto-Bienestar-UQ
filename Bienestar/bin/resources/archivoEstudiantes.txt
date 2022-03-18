@@ -1,0 +1,3 @@
+Juan Perez,12345,juan1,juan1,0,1
+ligia,1111,ligiahermosa,preciosaella,0,1
+otrousuario,3333,aaaa,bbbb,0,1

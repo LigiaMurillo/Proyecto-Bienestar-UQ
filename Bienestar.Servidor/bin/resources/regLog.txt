@@ -1,0 +1,12 @@
+dic 13, 2021 10:14:14 PM persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: Guardar estudiante,Ligia: Estudiante agregado.
+dic 13, 2021 10:14:47 PM persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: Guardar estudiante,Ligia: Estudiante no agregado.
+dic 13, 2021 10:15:56 PM persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: Agregar lugar,Ligia: Lugar creado.
+dic 13, 2021 10:16:07 PM persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: Agregar lugar,Ligia: lugar no creado.
+dic 13, 2021 11:36:13 PM persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: Agregar lugar,Ligia: Lugar creado.
+dic 13, 2021 11:36:37 PM persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: Agregar credito,Ligia: Credito agregado.
